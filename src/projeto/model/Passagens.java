@@ -5,8 +5,8 @@ public class Passagens extends Viagens {
     private String classe;
     private String nomeComprador;
 
-    public Passagens(double valor, String data, String horario, String pais, String cidade, int tamanhoTurma, String classe, String nomeComprador, int tipo) {
-        super(valor, data, horario, pais, cidade, tamanhoTurma, tipo);
+    public Passagens(double valor, String data, String horario, String pais, String cidade, int tamanhoTurma, int tipo, int numeroPassagem, String classe, String nomeComprador) {
+        super(valor, data, horario, pais, cidade, tamanhoTurma, tipo, numeroPassagem);
         this.classe = classe;
         this.nomeComprador = nomeComprador;
     }
@@ -25,12 +25,5 @@ public class Passagens extends Viagens {
 
     public void setNomeComprador(String nomeComprador) {
         this.nomeComprador = nomeComprador;
-    }
-
-    @Override
-    public void visualizarViagem() {
-        super.visualizarViagem();
-        System.out.println("Classe do Voo: " + this.classe);
-        System.out.println("Nome do Comprador: " + this.nomeComprador);
     }
 }
