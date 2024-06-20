@@ -1,11 +1,11 @@
-package projetoMulherNoMundo;
-
+package projeto;
 import java.util.Scanner;
 
-import static projetoMulherNoMundo.Menssagens.menssagem;
-import static projetoMulherNoMundo.Menssagens.sobre;
+import static projeto.Menssagens.menssagem;
+import static projeto.Menssagens.sobre;
 
 public class Menu {
+
     static Scanner leia = new Scanner(System.in);
 
     int opcao;
@@ -22,7 +22,7 @@ public class Menu {
 
             opcao = leia.nextInt();
 
-            if (opcao == 5) {
+            if (opcao == 6) {
                 System.out.println("\nMulheres no Mundo: viagens seguras e memórias inesquecíveis de mulher para mulheres");
                 sobre();
                 leia.close();
