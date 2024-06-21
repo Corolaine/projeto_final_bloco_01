@@ -10,7 +10,7 @@ public abstract class Viagens {
     private int tamanhoTurma;
     private int tipo;
     private int numeroPassagem;
-    private static int nomeCompradorPacote;
+
 
     public Viagens(double valor, String data, String horario, String pais, String cidade, int tamanhoTurma, int tipo, int numeroPassagem) {
         this.valor = valor;
@@ -88,6 +88,7 @@ public abstract class Viagens {
         this.numeroPassagem = numeroPassagem;
     }
 
+
     public void visualizarViagem() {
         String tipoViagem = (tipo == 1) ? "Passagem" : "Pacote";
         System.out.println("\nTipo de viagem: " + tipoViagem);
@@ -100,6 +101,5 @@ public abstract class Viagens {
         System.out.println("------------------------");
     }
 }
-
 
     

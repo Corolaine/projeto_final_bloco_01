@@ -1,7 +1,7 @@
 package projeto.model;
 
 public class Pacotes extends Viagens {
-
+    // Atributos específicos de Pacotes
     private int numeroPacote;
     private int quantidadePacotes;
 
