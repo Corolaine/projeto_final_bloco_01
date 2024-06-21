@@ -1,9 +1,8 @@
 package projeto;
 
-import projeto.controller.ProjetoController;
+import projeto.Controller.ProjetoController;
 import projeto.model.Pacotes;
 import projeto.model.Passagens;
-import projeto.model.Viagens;
 
 import java.util.Scanner;
 
@@ -12,12 +11,13 @@ import static projeto.Menssagens.sobre;
 
 public class Menu {
 
+
     public static void main(String[] args) {
 
         Scanner leia = new Scanner(System.in);
         ProjetoController projetoController = new ProjetoController();
-        Passagens passagem1 = new Passagens(500.00, "20240620", "8:00", "Brasil", "São Paulo", 1, 1, 123, "ecônmica", "Jão");
-        Pacotes pacote1 = new Pacotes(1200.50, "20240620", "12:30", "Brasil", "Rio de Janeiro", 10, 2, 4456, 889, 2);
+        Passagens passagem1 = new Passagens(500.00, "20240620", "8:00", "Brasil", "São Paulo", 1, 1, 123, "econômica", "Jão");
+        Pacotes pacote1 = new Pacotes(1200.50, "20240620", "12:30", "Brasil", "Rio de Janeiro", 10, 2, 4456, 584, 1);
 
         projetoController.cadastrar(passagem1);
         projetoController.cadastrar(pacote1);
@@ -38,7 +38,6 @@ public class Menu {
             switch (opcao) {
                 case 1:
                     System.out.println("Cadastrar Viagem\n");
-
 
                     System.out.print("Digite o valor da viagem: ");
                     double valor = leia.nextDouble();
@@ -62,9 +61,30 @@ public class Menu {
 
                     System.out.print("Digite o número da passagem: ");
                     int numeroPassagem = leia.nextInt();
-                    System.out.println("VIAGEM CADASTRADA!");
 
-                    leia.nextLine();
+                    leia.nextLine(); // Limpa o buffer do scanner
+
+                    if (tipo == 1) {
+                        System.out.print("Digite a classe da passagem: ");
+                        String classe = leia.nextLine();
+
+                        System.out.print("Digite o nome do comprador da passagem: ");
+                        String nomeComprador = leia.nextLine();
+
+                        Passagens novaPassagem = new Passagens(valor, data, horario, pais, cidade, 0, tipo, numeroPassagem, classe, nomeComprador);
+                        projetoController.cadastrar(novaPassagem);
+                    } else if (tipo == 2) {
+                        System.out.print("Digite o número do pacote: ");
+                        int numeroPacote = leia.nextInt();
+
+                        leia.nextLine(); // Limpa o buffer do scanner
+
+
+                        Pacotes novoPacote = new Pacotes(valor, data, horario, pais, cidade, 0, tipo, numeroPassagem, numeroPacote, numeroPacote);
+                        projetoController.cadastrar(novoPacote);
+                    } else {
+                        System.out.println("Tipo de viagem inválido.");
+                    }
                     break;
                 case 2:
                     projetoController.vizualizarTodas();
@@ -80,20 +100,16 @@ public class Menu {
                     System.out.print("Digite o número de série da viagem a atualizar: ");
                     int numeroSerieAtualizar = leia.nextInt();
 
-
                     System.out.print("Digite o novo valor da passagem: ");
                     double novoValor = leia.nextDouble();
 
-                    leia.nextLine();
-
+                    leia.nextLine(); // Limpa o buffer do scanner
 
                     System.out.print("Digite a nova classe da passagem: ");
                     String novaClasse = leia.nextLine();
 
-
                     System.out.print("Digite o nome do comprador da passagem: ");
                     String nomeComprador = leia.nextLine();
-
 
                     Passagens passagemAtualizada = new Passagens(novoValor, null, null, null, null, 0, 1, numeroSerieAtualizar, novaClasse, nomeComprador);
                     projetoController.atualizar(passagemAtualizada);
@@ -112,6 +128,5 @@ public class Menu {
         }
     }
 }
-
 
 

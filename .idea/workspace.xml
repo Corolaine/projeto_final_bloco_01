@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="773de038-c20b-47b4-8f08-26794df0fff1" name="Changes" comment="Projeto">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projeto/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/controller/ProjetoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/controller/ProjetoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/model/Pacotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/model/Pacotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/model/Passagens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/model/Passagens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projeto/controller/ProjetoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/Controller/ProjetoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/projeto/model/Viagens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/model/Viagens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/repository/testedeAplicacao.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +31,7 @@
               <list>
                 <branch-info repo="$PROJECT_DIR$" source="Menu" />
                 <branch-info repo="$PROJECT_DIR$" source="Model_Repository" />
+                <branch-info repo="$PROJECT_DIR$" source="Controller" />
               </list>
             </value>
           </entry>
@@ -43,7 +40,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Menu" />
+        <entry key="$PROJECT_DIR$" value="Model_Repository" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,11 +73,18 @@
     "Application.testedeAplicacao.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Model__Repository",
+    "git-widget-placeholder": "Controller",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/carol/IdeaProjects/projeto_final_bloco_01/src/projeto/controller",
     "onboarding.tips.debug.path": "C:/Users/carol/IdeaProjects/projeto_final_bloco_01/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\carol\IdeaProjects\projeto_final_bloco_01\src\projeto\controller" />
+      <recent name="C:\Users\carol\IdeaProjects\projeto_final_bloco_01\src\projeto" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="projeto.Menu" />
@@ -134,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718917157912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Projeto">
+      <option name="closed" value="true" />
+      <created>1718927668820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718927668820</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,4 +1,4 @@
-package projeto.controller;
+package projeto.Controller;
 
 import projeto.model.Viagens;
 import projeto.repository.ProjetoRepository;

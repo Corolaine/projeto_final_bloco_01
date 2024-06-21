@@ -10,6 +10,7 @@ public abstract class Viagens {
     private int tamanhoTurma;
     private int tipo;
     private int numeroPassagem;
+    private static int nomeCompradorPacote;
 
     public Viagens(double valor, String data, String horario, String pais, String cidade, int tamanhoTurma, int tipo, int numeroPassagem) {
         this.valor = valor;
